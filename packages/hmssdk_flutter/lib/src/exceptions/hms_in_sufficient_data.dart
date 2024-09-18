@@ -2,7 +2,10 @@
 import 'dart:core';
 
 class HMSInSufficientDataException implements Exception {
-  String message;
+  final String message;
 
   HMSInSufficientDataException({required this.message});
+  
+  @override
+  String toString() => 'HMSInSufficientDataException: $message';
 }
